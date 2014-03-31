@@ -11,8 +11,9 @@ set( CMAKE_SYSTEM_NAME Generic )
  
 # Set a toolchain path. You only need to set this if the toolchain isn't in
 # your system path. Don't forget a trailing path separator!
-# We assume the compiler is located in /opt/arm_tools/gcc-arm-none-eabi-4_8-2013q4/bin/
-set( TC_PATH "/opt/arm_tools/gcc-arm-none-eabi-4_8-2013q4/bin/" )
+# We assume the compiler is located in /opt/arm_tools/gcc-arm-none-eabi/bin/
+# This should be a pointer to the actually compiler version we should be using.
+set( TC_PATH "/opt/arm_tools/gcc-arm-none-eabi/bin/" )
  
 # The toolchain prefix for all toolchain executables
 set( CROSS_COMPILE arm-none-eabi- )
